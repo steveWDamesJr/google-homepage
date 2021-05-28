@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Google Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="CSS/style.css">
-  <title>Google Home</title>
-</head>
+  <style>
+    :root {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+    }
+    .searchbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-<body>
-  <div class="container">
-    <div class="tool-bar">
-      <a href="/">Gmail</a>
-      <a href="/">Images</a>
-      <div>
-        <i class="material-icons">apps</i>
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #f2f2f2;
+      height: 30px;
+      border-radius: 50px;
+      padding: 10px;
+    }
+    .input {
+      background-color: #f2f2f2;
+      border: none;
+      outline: none;
+      justify-self: flex-end;
+
+      color: black;
+      font-size: 16px;
+      line-height: 40px;
+    }
+    .searchIcon {
+      justify-self: flex-start;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="tool-bar">
+        <a href="/">Gmail</a>
+        <a href="/">Images</a>
+        <div>
+          <i class="material-icons">apps</i>
+        </div>
+        <div id="profile">L</div>
       </div>
-      <div id="profile">L</div>
+      <div class="searchbar">
+        <input type="text" class="input" size="67" />
+        <div class="searchIcon">
+          <span class="material-icons"> search </span>
+        </div>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

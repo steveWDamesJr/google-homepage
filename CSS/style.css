@@ -1,12 +1,11 @@
 #profile {
-    width: 1em;
-    height: 1em;
-    padding: 1em;
-    text-align: center;
-    color: white;
-    background-color: rgb(120, 144, 156);
-    border-style: none;
-    border-radius: 50%;
-    align-self: center;
-  }
-
+  width: 1em;
+  height: 1em;
+  padding: 1em;
+  text-align: center;
+  color: white;
+  background-color: rgb(120, 144, 156);
+  border-style: none;
+  border-radius: 50%;
+  align-self: center;
+}
